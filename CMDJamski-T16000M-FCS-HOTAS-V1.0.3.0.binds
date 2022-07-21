@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Root PresetName="CMDJamski-T16000M-FCS-HOTAS-V1.0" MajorVersion="3" MinorVersion="0">
-	<KeyboardLayout>en-GB</KeyboardLayout>
+	<KeyboardLayout>en-US</KeyboardLayout>
 	<MouseXMode Value="" />
 	<MouseXDecay Value="0" />
 	<MouseYMode Value="" />
@@ -17,7 +17,7 @@
 	<YawAxisRaw>
 		<Binding Device="T16000MTHROTTLE" Key="Joy_RZAxis" />
 		<Inverted Value="0" />
-		<Deadzone Value="0.00000000" />
+		<Deadzone Value="0.02237500" />
 	</YawAxisRaw>
 	<YawLeftButton>
 		<Primary Device="{NoDevice}" Key="" />
@@ -38,7 +38,7 @@
 	<RollAxisRaw>
 		<Binding Device="T16000M" Key="Joy_XAxis" />
 		<Inverted Value="0" />
-		<Deadzone Value="0.00000000" />
+		<Deadzone Value="0.02062500" />
 	</RollAxisRaw>
 	<RollLeftButton>
 		<Primary Device="{NoDevice}" Key="" />
@@ -51,7 +51,7 @@
 	<PitchAxisRaw>
 		<Binding Device="T16000M" Key="Joy_YAxis" />
 		<Inverted Value="1" />
-		<Deadzone Value="0.00000000" />
+		<Deadzone Value="0.01875000" />
 	</PitchAxisRaw>
 	<PitchUpButton>
 		<Primary Device="{NoDevice}" Key="" />
@@ -484,7 +484,7 @@
 		<Secondary Device="{NoDevice}" Key="" />
 	</EngineColourToggle>
 	<NightVisionToggle>
-		<Primary Device="{NoDevice}" Key="" />
+		<Primary Device="T16000M" Key="Joy_5" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</NightVisionToggle>
 	<UIFocus>
@@ -549,11 +549,13 @@
 		<Secondary Device="{NoDevice}" Key="" />
 	</OpenCodexGoToDiscovery>
 	<PlayerHUDModeToggle>
-		<Primary Device="T16000M" Key="Joy_3">
-			<Modifier Device="T16000MTHROTTLE" Key="Joy_2" />
-		</Primary>
+		<Primary Device="T16000M" Key="Joy_8" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</PlayerHUDModeToggle>
+	<ExplorationFSSEnter>
+		<Primary Device="T16000M" Key="Joy_10" />
+		<Secondary Device="{NoDevice}" Key="" />
+	</ExplorationFSSEnter>
 	<UI_Up>
 		<Primary Device="T16000M" Key="Joy_POV1Up" />
 		<Secondary Device="{NoDevice}" Key="" />
@@ -723,6 +725,10 @@
 		<Secondary Device="T16000MTHROTTLE" Key="Joy_3" />
 		<ToggleOn Value="0" />
 	</CamTranslateZHold>
+	<GalaxyMapHome>
+		<Primary Device="{NoDevice}" Key="" />
+		<Secondary Device="{NoDevice}" Key="" />
+	</GalaxyMapHome>
 	<ToggleDriveAssist>
 		<Primary Device="T16000MTHROTTLE" Key="Joy_1" />
 		<Secondary Device="{NoDevice}" Key="" />
@@ -797,11 +803,19 @@
 		<Secondary Device="{NoDevice}" Key="" />
 	</HeadlightsBuggyButton>
 	<ToggleBuggyTurretButton>
-		<Primary Device="T16000M" Key="Joy_1">
+		<Primary Device="T16000M" Key="Joy_3">
 			<Modifier Device="T16000MTHROTTLE" Key="Joy_3" />
 		</Primary>
 		<Secondary Device="{NoDevice}" Key="" />
 	</ToggleBuggyTurretButton>
+	<BuggyCycleFireGroupNext>
+		<Primary Device="T16000M" Key="Joy_4" />
+		<Secondary Device="{NoDevice}" Key="" />
+	</BuggyCycleFireGroupNext>
+	<BuggyCycleFireGroupPrevious>
+		<Primary Device="{NoDevice}" Key="" />
+		<Secondary Device="{NoDevice}" Key="" />
+	</BuggyCycleFireGroupPrevious>
 	<SelectTarget_Buggy>
 		<Primary Device="T16000MTHROTTLE" Key="Joy_8" />
 		<Secondary Device="{NoDevice}" Key="" />
@@ -930,6 +944,14 @@
 		<Primary Device="{NoDevice}" Key="" />
 		<Secondary Device="T16000M" Key="Joy_16" />
 	</SystemMapOpen_Buggy>
+	<OpenCodexGoToDiscovery_Buggy>
+		<Primary Device="{NoDevice}" Key="" />
+		<Secondary Device="{NoDevice}" Key="" />
+	</OpenCodexGoToDiscovery_Buggy>
+	<PlayerHUDModeToggle_Buggy>
+		<Primary Device="T16000M" Key="Joy_8" />
+		<Secondary Device="{NoDevice}" Key="" />
+	</PlayerHUDModeToggle_Buggy>
 	<HeadLookToggle_Buggy>
 		<Primary Device="T16000MTHROTTLE" Key="Joy_6" />
 		<Secondary Device="{NoDevice}" Key="" />
@@ -1244,6 +1266,32 @@
 		<Primary Device="Keyboard" Key="Key_RightArrow" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</FStopInc>
+	<StoreEnableRotation>
+		<Primary Device="{NoDevice}" Key="" />
+		<Secondary Device="{NoDevice}" Key="" />
+	</StoreEnableRotation>
+	<StorePitchCamera>
+		<Binding Device="{NoDevice}" Key="" />
+		<Inverted Value="0" />
+		<Deadzone Value="0.00000000" />
+	</StorePitchCamera>
+	<StoreYawCamera>
+		<Binding Device="{NoDevice}" Key="" />
+		<Inverted Value="0" />
+		<Deadzone Value="0.00000000" />
+	</StoreYawCamera>
+	<StoreCamZoomIn>
+		<Primary Device="{NoDevice}" Key="" />
+		<Secondary Device="{NoDevice}" Key="" />
+	</StoreCamZoomIn>
+	<StoreCamZoomOut>
+		<Primary Device="{NoDevice}" Key="" />
+		<Secondary Device="{NoDevice}" Key="" />
+	</StoreCamZoomOut>
+	<StoreToggle>
+		<Primary Device="{NoDevice}" Key="" />
+		<Secondary Device="{NoDevice}" Key="" />
+	</StoreToggle>
 	<CommanderCreator_Undo>
 		<Primary Device="Keyboard" Key="Key_Z" />
 		<Secondary Device="{NoDevice}" Key="" />
@@ -1277,42 +1325,38 @@
 		<Primary Device="{NoDevice}" Key="" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</GalnetAudio_ClearQueue>
-	<ExplorationFSSEnter>
-		<Primary Device="T16000M" Key="Joy_10" />
-		<Secondary Device="{NoDevice}" Key="" />
-	</ExplorationFSSEnter>
 	<ExplorationFSSCameraPitch>
-		<Binding Device="T16000M" Key="Joy_XAxis" />
-		<Inverted Value="1" />
+		<Binding Device="T16000M" Key="Joy_YAxis" />
+		<Inverted Value="0" />
 		<Deadzone Value="0.00000000" />
 	</ExplorationFSSCameraPitch>
 	<ExplorationFSSCameraPitchIncreaseButton>
-		<Primary Device="{NoDevice}" Key="" />
+		<Primary Device="T16000M" Key="Joy_POV1Down" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</ExplorationFSSCameraPitchIncreaseButton>
 	<ExplorationFSSCameraPitchDecreaseButton>
-		<Primary Device="{NoDevice}" Key="" />
+		<Primary Device="T16000M" Key="Joy_POV1Up" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</ExplorationFSSCameraPitchDecreaseButton>
 	<ExplorationFSSCameraYaw>
-		<Binding Device="T16000M" Key="Joy_YAxis" />
-		<Inverted Value="1" />
+		<Binding Device="T16000M" Key="Joy_XAxis" />
+		<Inverted Value="0" />
 		<Deadzone Value="0.00000000" />
 	</ExplorationFSSCameraYaw>
 	<ExplorationFSSCameraYawIncreaseButton>
-		<Primary Device="{NoDevice}" Key="" />
+		<Primary Device="T16000M" Key="Joy_POV1Right" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</ExplorationFSSCameraYawIncreaseButton>
 	<ExplorationFSSCameraYawDecreaseButton>
-		<Primary Device="{NoDevice}" Key="" />
+		<Primary Device="T16000M" Key="Joy_POV1Left" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</ExplorationFSSCameraYawDecreaseButton>
 	<ExplorationFSSZoomIn>
-		<Primary Device="{NoDevice}" Key="" />
+		<Primary Device="T16000M" Key="Joy_1" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</ExplorationFSSZoomIn>
 	<ExplorationFSSZoomOut>
-		<Primary Device="{NoDevice}" Key="" />
+		<Primary Device="T16000M" Key="Joy_2" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</ExplorationFSSZoomOut>
 	<ExplorationFSSMiniZoomIn>
@@ -1329,11 +1373,11 @@
 		<Deadzone Value="0.00000000" />
 	</ExplorationFSSRadioTuningX_Raw>
 	<ExplorationFSSRadioTuningX_Increase>
-		<Primary Device="{NoDevice}" Key="" />
+		<Primary Device="T16000MTHROTTLE" Key="Joy_POV1Right" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</ExplorationFSSRadioTuningX_Increase>
 	<ExplorationFSSRadioTuningX_Decrease>
-		<Primary Device="{NoDevice}" Key="" />
+		<Primary Device="T16000MTHROTTLE" Key="Joy_POV1Left" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</ExplorationFSSRadioTuningX_Decrease>
 	<ExplorationFSSRadioTuningAbsoluteX>
@@ -1358,7 +1402,7 @@
 	<FSSMouseDeadzone Value="0.00000000" />
 	<FSSMouseLinearity Value="1.00000000" />
 	<ExplorationFSSTarget>
-		<Primary Device="{NoDevice}" Key="" />
+		<Primary Device="T16000MTHROTTLE" Key="Joy_8" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</ExplorationFSSTarget>
 	<ExplorationFSSShowHelp>
